@@ -1,6 +1,6 @@
 //Object literal for salon infornmation
 const salon = {
-    name: "Colfax Pet Salon",
+    name: "Colfax Pet Saloon",
     hours: {
         open: "9:00 AM",
         close: "6:00 PM"
