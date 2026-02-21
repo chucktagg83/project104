@@ -73,3 +73,24 @@ function registerProduct(event) {
 // Event listener to handle form submission
 const productForm = document.querySelector("form"); // Select the form
 productForm.addEventListener('submit', registerProduct); // Connect the form submission to the function
+
+
+//---------------------------------------Dark Mode----------------------------------------------//
+$("#darkOrLight").click(function () {
+
+    // Toggle dark mode class on body
+    $("body").toggleClass("dark-mode");
+
+    // Change button icon depending on mode
+    if ($("body").hasClass("dark-mode")) {
+        $("#darkOrLight")
+            .text("🌙")
+            .removeClass("btn-light")
+            .addClass("btn-dark");
+    } else {
+        $("#darkOrLight")
+            .text("☀️")
+            .removeClass("btn-dark")
+            .addClass("btn-light");
+    }
+});
